@@ -103,6 +103,7 @@ Compressed (.npz)	      1.1453 MB
 # Compression Achieved: 1.46× reduction
 
 # Resource Usage
+RAM usage: 1469.12 MB
 GPU Memory Allocated: 26.83 MB
 GPU Memory Reserved: 132.00 MB
 
