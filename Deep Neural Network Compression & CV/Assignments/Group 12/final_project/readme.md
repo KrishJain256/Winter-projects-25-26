@@ -7,11 +7,11 @@ Achieves **~9× storage compression** with **~3.9% Top-1 accuracy drop**. :conte
 
 ---
 
-Repository Structure
-
 ```
 
 ```markdown
+Repository Structure
+
 project-root/
 │
 ├── config.py                          # Device selection (CUDA / MPS / CPU)
