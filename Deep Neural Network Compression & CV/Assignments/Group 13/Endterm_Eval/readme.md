@@ -39,9 +39,9 @@ python3 main.py
 
 * quantization.py: K-Means clustering and weight sharing.
 
-* conv2d.py / linear.py: Custom wrappers handling mask and indices buffers.
+* conv2d.py, linear.py: Custom wrappers handling mask and indices buffers.
 
-* **models/: model_cifar.py defines the VGG-style architecture.
+* models/: model_cifar.py defines the VGG-style architecture.
 
 ### utils/:
 
@@ -60,7 +60,6 @@ python3 main.py
 ## 📥 Loading the Compressed Model
 Since the weights are stored in a custom sparse format, use the provided utility to load them:
 ```bash
-Python
 from models.model_cifar import SmallCIFARNet
 from utils.loading import load_model_from_npz
 from config import DEVICE
@@ -79,11 +78,11 @@ model.eval()
 ## 📊 Final Results
 Benchmarks performed on an 8GB M1 MacBook Air:
 
-Metric	Result
-Original Size (Dense)	**~2.54 MB**
-Compressed Size (Huffman)	**0.07 MB**
-Compression Ratio	**38.13x**
-Accuracy Change	**-0.98% (80.19% Final)**
-Avg Bits per Weight	**0.84 bits**
-Inference Latency	**0.47 ms / image**
-Peak RAM Usage	**~1033 MB**
+* Metric	Result
+* Original Size (Dense)	**~2.54 MB**
+* Compressed Size (Huffman)	**0.07 MB**
+* Compression Ratio	**38.13x**
+* Accuracy Change	**-0.98% (80.19% Final)**
+* Avg Bits per Weight	**0.84 bits**
+* Inference Latency	**0.47 ms / image**
+* Peak RAM Usage	**~1033 MB**
