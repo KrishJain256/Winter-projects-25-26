@@ -1,3 +1,5 @@
+# BY ASHIT YADAV 240213
+# VANSH RAO 241138 
 # Deep Neural Network Compression — CIFAR-10
 
 A complete, modular PyTorch implementation of the deep compression pipeline from Han et al. (2015). Built on CIFAR-10, covering every stage from training to deployment-ready sparse quantised models.
